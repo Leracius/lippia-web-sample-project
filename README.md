@@ -1,3 +1,53 @@
+# Lippia Web Automation – Saucedemo
+
+Automatización de pruebas end-to-end para el sitio **Saucedemo** utilizando  
+**Lippia Framework (Crowdar)** + **Selenium WebDriver**, **Cucumber (Gherkin)** y **TestNG**.
+
+El objetivo del proyecto es validar funcionalidades críticas del flujo de compra, login y carrito, utilizando buenas prácticas de automatización y BDD.
+
+---
+
+## 🚀 Tecnologías utilizadas
+
+- **Java 21**
+- **Maven**
+- **Selenium WebDriver**
+- **Cucumber (BDD – Gherkin)**
+- **TestNG**
+- **Lippia Framework**
+- **ChromeDriver / Firefox / Edge** (configurables por profile)
+
+## 🧪 Escenarios cubiertos
+
+### ✔ **Login**
+- `@LoginExitoso`  
+  Verifica acceso correcto con credenciales válidas.
+
+- `@LoginFallido`  
+  Valida bloqueo de usuario y mensaje de error correcto.
+
+### ✔ **Carrito y compra**
+- `@PruebaCarrito`
+-   Verificacion de agregado de productos
+-   Verificacion de producto removido del carrito
+-   Verificación de numero correcto de productos en el carrito
+
+
+- `@CompraExitosa`  
+  Flow completo:
+    - login
+    - agregar productos
+    - verificar carrito
+    - completar checkout
+    - validar resumen
+    - finalizar compra
+
+
+Estos escenarios están escritos en **Gherkin**, manteniendo claridad, reutilización y buenas prácticas de BDD.
+
+
+
+
 # Lippia Web sample project
 
 <!--## Architecture
