@@ -39,7 +39,7 @@
 		<crowdar.cucumber.option>src/test/resources/web/features ${cucumber.hooks} ${cucumber.stepsDefinitions} --tags 'not @Ignore' --tags ${cucumber.tags} ${cucumber.report}</crowdar.cucumber.option>
 
 		<!-- client project custom properties -->
-		<web-app.url>http://www.google.com.ar</web-app.url>
+		<web-app.url>https://www.saucedemo.com</web-app.url>
 
 	</properties>
 	<profiles>
@@ -58,6 +58,7 @@
 				<crowdar.driver.capabilities.json_path>src/main/resources/browsers/chromeCapabilities.json</crowdar.driver.capabilities.json_path>
 			</properties>
 		</profile>
+
 
 		<profile>
 			<id>firefox</id>
@@ -173,3 +174,4 @@
 	</repositories>
 
 </project>
+

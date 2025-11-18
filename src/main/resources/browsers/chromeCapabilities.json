@@ -1,8 +1,24 @@
 {
-	"browserName": "chrome",
-	"goog:chromeOptions": {"args": ["disable-infobars", "--ignore-certificate-errors", "start-maximized"], 
-						   "extensions": [],
-						   "prefs": {"printing.enabled": false}
-	}, 
-	"platform": "ANY"
-} 
+  "browserName": "chrome",
+  "goog:chromeOptions": {
+    "args": [
+      "--disable-infobars",
+      "--ignore-certificate-errors",
+      "--start-maximized",
+      "--disable-password-manager-reauthentication",
+      "--disable-popup-blocking",
+      "--disable-notifications",
+      "--disable-save-password-bubble",
+      "--disable-features=PasswordManagerOnboarding,PasswordLeakDetection,PasswordManagerRedesign,AutofillServerCommunication,AutofillEnableAccountWalletStorage,PasswordCheck,PasswordCheckFeature"
+    ],
+    "extensions": [],
+    "prefs": {
+      "printing.enabled": false,
+      "credentials_enable_service": false,
+      "profile.password_manager_enabled": false,
+      "password_manager_enabled": false,
+      "profile.default_content_setting_values.notifications": 2
+    }
+  },
+  "platform": "ANY"
+}
